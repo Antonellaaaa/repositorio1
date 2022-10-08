@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+     <link rel="shorcut icon" href="../img/icono.jpg">
+     <link rel="stylesheet" href="../estilos/css/estilos.css">
+</head>
+<body>
+    <img class="plantacentrar rotate-scale-down-hor" src="../img/a-potted-houseplant-in-a-flat-cartoon-style-an-element-for-decorating-your-home-room-or-office-illustration-isolated-on-a-white-background-vector.jpg" alt="logo de la empresa">
+    <header class="header">
+        <nav class="header_nav">
+            <ul class="header__list">
+                <li class="header__item"><a href="../index.html">INDEX</a></li>
+                <li class="header__item"><a href="#">CONTACTO</a></li>
+                <li class="header__item"><a href="./stock.html">STOCK</a></li>
+                <li class="header__item"><a href="./cuidado_basico.html">CUIDADO BASICO</a></li>
+                <li class="header__item"><a href="./tipos_de_plantas.html">TIPOS DE PLANTAS</a></li>
+                
+            </ul>
+        </nav>
+    
+     </header>
+    <section id="container">
+    <form action="" method="GET"  enctype="text/plain">
+        <fieldset>
+            <legend>INFORMACION PERSONAL</legend>
+    <div>
+
+        <label for="name">Nombre y Apellido</label>
+        <input type="text" name="name" id="name" required placeholder="Introduzca su nombre">
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" required placeholder="Introduzca su email">
+    </div>
+    <div>
+        <label for="age">Edad</label>
+        <input type="number" name="age" id="age" min="1" max="200" steo="5">
+    </div>
+    <div>
+        <label for="date">Fecha de nacimiento</label>
+        <input type="date" name="date" id="date" min="2019-06-10">
+
+    </div>
+        </fieldset>
+        <fieldset>
+            <legend>EXPERIENCIA LABORAL</legend>
+        
+    <div>
+        <strong>Tenes experiencia en el cuidado de plantas?</strong>
+        <div>
+            <label for="si">si</label>
+            <input type="radio" name="si" id="si" value="si">
+        </div>
+        <div>
+            <label for="no">no</label>
+            <input type="radio" name="si" id="si" value="si">
+        </div>
+    </div>
+    <div>
+        <label for="bio">Contanos un poco de vos y en caso de tener experiencia desarrolle</label>
+        <textarea id="bio" name="bio"></textarea>
+    </div>
+    <div>
+        <label for="file">Subir cv</label>
+        <input id="file" type="file" name="file">
+    </div>
+    <div>
+        <label for="phone">Telefono</label>
+        <input id="tel" name="phone" id="phone">
+    </div>
+</fieldset>
+    <input type="reset" value="Reiniciar Formulario"></input>
+    <input type="submit" value="Enviar Formulario"></input>
+</section>
+</form>
+<hr>
+<footer>Direccion 123</footer>
+</body>
+</html>

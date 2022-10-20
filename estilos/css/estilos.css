@@ -53,6 +53,7 @@ padding: 1rem;
 margin: 1rem;
 display: inline-block;
 border: 2px solid black;
+color:rgb(108, 40, 108)
 }
 
 /* transicion hover cambia de color*/
@@ -200,12 +201,25 @@ background-color:white
 
 }
 
-/*responsive hasta tipos de plantas*/
+/*responsive tipos de plantas*/
 
 @media screen and (max-width:320px) {
     .header__list{
         display: flex;
         flex-direction: column;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    .header__item{
+       height: 27px;
+       margin: 7px;
+
+    }
+    
+    .header_nav {
+        width: 0px; 
+        text-align: center;
     }
 
     .info{
@@ -214,8 +228,27 @@ background-color:white
  
 }}
 
- @media screen and (max-width: 768px) {
+ @media screen and (max-width: 768px) and (min-width: 321px) {
     .tit11{font-size: 2rem;}
+
+    .header__list {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        padding: 30px;
+    }
+    .header__item {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .tit11 {
+        margin: 20px;
+        font-size: 2rem;
+    }
+
+
+
  }
     
  @media screen and (max-width: 1024px) { /*todo ok*/}
@@ -224,18 +257,37 @@ background-color:white
  /*media queries stock */
 
  @media screen and (max-width:320px) {
-    .header__list{
-        display: flex;
-        justify-content: center;
-    }
+    .header__list{  
+    flex-direction: column;
+    margin-left: 3px;
+    padding-right: 12px;
+}
+    
     .contenedor{
         display: flex;
         flex-direction: column;
+        border: 0px;
     }
-}
+   
+    .header_nav{
+        width: 294px;
+        text-align: center;
+        margin-left: 4px;
+    }
+    
+    .header__item{
+        height: 47px;
+        margin: 7px;
+        display: inline-block;}
+    }
+    
 
 
-  @media screen and (max-width:768px) {
+
+
+  @media screen and (max-width:768px) and 
+  (min-width: 321px)  {
+  
     .main1{
     width: 100%;
     }
@@ -248,12 +300,31 @@ background-color:white
     .footer{
         display:grid
     }
+    
+    #logo-contenedor {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
 
+     .contenedor{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+     }
+
+     .header__item{
+        padding: 10px;
+        margin: 10px;
+     }
+
+     .header_nav{
+        display: flex;
+     }
+   
   }
-
   
-  @media screen  { /*todo ok*/
-  }
+  
+
 
  
 
